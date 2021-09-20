@@ -11,6 +11,7 @@
   src: url("../../assets/YekanBakh-Bold/YekanBakh-Bold.eot") format("eot"), url("../../assets/YekanBakh-Bold/YekanBakh-Bold.ttf") format("ttf"), url("../../assets/YekanBakh-Bold/YekanBakh-Bold.woff") format("woff"); }
 
 .header {
+  background-color: #f5f7fa;
   font-weight: bold;
   display: flex;
   align-items: center;
@@ -19,10 +20,38 @@
   padding-bottom: 20px; }
   .header .main-title {
     color: #0b3a42;
-    font-size: 3rem; }
+    font-size: 40px; }
   .header .sub-title {
-    font-size: 1.5rem;
+    font-size: 18px;
     color: #155a6d; }
+
+.iconic-tabs {
+  background-color: #f5f7fa; }
+  .iconic-tabs ul {
+    list-style: none;
+    font-size: 18px; }
+    .iconic-tabs ul li {
+      display: inline-block;
+      padding: 20px;
+      background-color: #e7ecf4;
+      border-top-left-radius: 16px;
+      border-top-right-radius: 16px;
+      margin-left: 30px;
+      min-width: 213px;
+      max-width: 213px; }
+      .iconic-tabs ul li:hover {
+        cursor: pointer;
+        background-color: white;
+        color: #6a7d9b; }
+      .iconic-tabs ul li .tab-item {
+        display: flex;
+        justify-content: center; }
+        .iconic-tabs ul li .tab-item .tab-title {
+          margin-right: 3px; }
+
+* {
+  margin: 0;
+  padding: 0; }
 
 html,
 body {

@@ -1,8 +1,13 @@
 @import "./_fonts";
 @import "./_variables";
 @import "./_header.scss";
+@import "./iconic_tabs";
 
-//
+* {
+  margin: 0;
+  padding: 0;
+}
+
 html,
 body {
   height: 100%;
