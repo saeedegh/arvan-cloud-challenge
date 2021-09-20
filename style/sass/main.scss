@@ -1,20 +1,5 @@
-@font-face {
-  font-family: YekanBakh;
-  font-style: normal;
-  font-weight: normal;
-  src: url("../../assets/YekanBakh-Regular/YekanBakh-Regular.eot") format("eot"),
-    url("../../assets/YekanBakh-Regular/YekanBakh-Regular.ttf") format("ttf"),
-    url("../../assets/YekanBakh-Regular/YekanBakh-Regular.woff") format("woff");
-}
-
-@font-face {
-  font-family: YekanBakh;
-  font-style: normal;
-  font-weight: bold;
-  src: url("../../assets/YekanBakh-Bold/YekanBakh-Bold.eot") format("eot"),
-    url("../../assets/YekanBakh-Bold/YekanBakh-Bold.ttf") format("ttf"),
-    url("../../assets/YekanBakh-Bold/YekanBakh-Bold.woff") format("woff");
-}
+@import "./_fonts";
+@import "./variables";
 
 html,
 body {
@@ -25,12 +10,12 @@ body {
 
 .wrapper {
   height: 100%;
-  background-color: #f5f7fa;
+  background-color: $background_gray;
 }
 
 .main-container {
   height: 100%;
-  width: 1140px;
+  width: $container_width;
   margin: 0 auto;
   background-color: white;
 }
