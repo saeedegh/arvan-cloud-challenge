@@ -55,15 +55,44 @@
         .iconic-tabs ul li .tab-item .tab-title {
           margin-right: 3px; }
 
+.content {
+  padding: 55px 107px; }
+  .content ul {
+    list-style: none; }
+    .content ul li {
+      padding: 25px 0; }
+    .content ul li .menu-text::before {
+      content: "\2022";
+      /* Add content: \2022 is the CSS Code/unicode for a bullet */
+      color: #20c5ba;
+      font-weight: bold;
+      width: 1em;
+      margin-left: 1em; }
+  .content .icon {
+    padding: 4px 8px 2px;
+    background-color: #e7ecf4;
+    border-radius: 50%; }
+    .content .icon:hover {
+      cursor: pointer; }
+    .content .icon.active {
+      background-color: #20c5ba; }
+      .content .icon.active .fa-chevron-up,
+      .content .icon.active .fa-chevron-down {
+        color: white; }
+    .content .icon .fa-chevron-up,
+    .content .icon .fa-chevron-down {
+      color: #9db0cb;
+      font-size: 10px; }
+
 * {
   margin: 0;
   padding: 0; }
 
 html,
 body {
-  height: 100%;
   font-family: YekanBakh;
-  font-weight: normal; }
+  font-weight: normal;
+  font-size: 18px; }
 
 .wrapper {
   height: 100%;
@@ -74,3 +103,12 @@ body {
   width: 1140px;
   margin: 0 auto;
   background-color: white; }
+
+.d-flex {
+  display: flex; }
+
+.justify-space-between {
+  justify-content: space-between; }
+
+.align-center {
+  align-items: center; }

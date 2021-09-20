@@ -2,6 +2,7 @@
 @import "./_variables";
 @import "./_header.scss";
 @import "./iconic_tabs";
+@import "./section_1";
 
 * {
   margin: 0;
@@ -10,9 +11,9 @@
 
 html,
 body {
-  height: 100%;
   font-family: YekanBakh;
   font-weight: normal;
+  font-size: $main_font_size;
 }
 
 .wrapper {
@@ -25,4 +26,13 @@ body {
   width: $container_width;
   margin: 0 auto;
   background-color: white;
+}
+.d-flex {
+  display: flex;
+}
+.justify-space-between {
+  justify-content: space-between;
+}
+.align-center {
+  align-items: center;
 }
