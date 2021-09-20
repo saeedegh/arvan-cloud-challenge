@@ -10,6 +10,20 @@
   font-weight: bold;
   src: url("../../assets/YekanBakh-Bold/YekanBakh-Bold.eot") format("eot"), url("../../assets/YekanBakh-Bold/YekanBakh-Bold.ttf") format("ttf"), url("../../assets/YekanBakh-Bold/YekanBakh-Bold.woff") format("woff"); }
 
+.header {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 54px;
+  padding-bottom: 20px; }
+  .header .main-title {
+    color: #0b3a42;
+    font-size: 3rem; }
+  .header .sub-title {
+    font-size: 1.5rem;
+    color: #155a6d; }
+
 html,
 body {
   height: 100%;
@@ -25,6 +39,3 @@ body {
   width: 1140px;
   margin: 0 auto;
   background-color: white; }
-
-.header {
-  font-weight: bold; }

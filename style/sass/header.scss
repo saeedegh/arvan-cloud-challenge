@@ -1,0 +1,19 @@
+@import "./variables";
+//
+
+.header {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 54px;
+  padding-bottom: 20px;
+  .main-title {
+    color: $green_darken_3;
+    font-size: 3rem;
+  }
+  .sub-title {
+    font-size: 1.5rem;
+    color: $green_darken_2;
+  }
+}

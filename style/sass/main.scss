@@ -1,6 +1,8 @@
 @import "./_fonts";
 @import "./variables";
+@import "./header.scss";
 
+//
 html,
 body {
   height: 100%;
@@ -19,11 +21,3 @@ body {
   margin: 0 auto;
   background-color: white;
 }
-
-.header {
-  font-weight: bold;
-}
-// .main-title {
-// }
-// .sub-title {
-// }
