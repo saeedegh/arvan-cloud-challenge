@@ -1,8 +1,16 @@
+@mixin active-tab {
+  cursor: pointer;
+  background-color: white;
+  color: $gray_darken_2;
+}
+
 .iconic-tabs {
   background-color: $background_gray;
+
   ul {
     list-style: none;
     font-size: $main_font_size;
+
     li {
       display: inline-block;
       padding: 20px;
@@ -14,10 +22,16 @@
       max-width: 213px;
 
       &:hover {
-        cursor: pointer;
-        background-color: white;
-        color: $gray_darken_2;
+        @include active-tab();
       }
+      &.active {
+        @include active-tab();
+      }
+
+      & .loader-icon {
+        display: none;
+      }
+
       .tab-item {
         display: flex;
         justify-content: center;

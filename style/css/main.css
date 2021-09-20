@@ -43,6 +43,12 @@
         cursor: pointer;
         background-color: white;
         color: #6a7d9b; }
+      .iconic-tabs ul li.active {
+        cursor: pointer;
+        background-color: white;
+        color: #6a7d9b; }
+      .iconic-tabs ul li .loader-icon {
+        display: none; }
       .iconic-tabs ul li .tab-item {
         display: flex;
         justify-content: center; }
