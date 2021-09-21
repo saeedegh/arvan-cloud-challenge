@@ -8,6 +8,9 @@
   margin: 0;
   padding: 0;
 }
+ul {
+  margin: 0;
+}
 
 html,
 body {
@@ -25,8 +28,8 @@ body {
   height: 100%;
   width: $container_width;
   margin: 0 auto;
-  background-color: white;
 }
+
 .d-flex {
   display: flex;
 }

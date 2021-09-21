@@ -56,20 +56,37 @@
           margin-right: 3px; }
 
 .content {
-  padding: 55px 107px; }
+  padding: 55px 57px;
+  border-radius: 16px;
+  border-top-right-radius: 0;
+  background-color: white; }
   .content ul {
     list-style: none; }
     .content ul li {
-      padding: 25px 0; }
-    .content ul li .menu-text::before {
-      content: "\2022";
-      /* Add content: \2022 is the CSS Code/unicode for a bullet */
-      color: #20c5ba;
-      font-weight: bold;
-      width: 1em;
-      margin-left: 1em; }
+      padding: 25px 50px; }
+      .content ul li.active {
+        border: 3px solid #20c5ba;
+        border-radius: 16px; }
+    .content ul .icon-wrapper {
+      background-color: #e7ecf4;
+      border-radius: 8px;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .content ul .icon-wrapper .icon-container {
+        width: 39px;
+        height: 39px;
+        border-radius: 8px;
+        background-color: #20c5ba;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .content ul .icon-wrapper .icon-container .fa-chevron-down {
+          color: white; }
   .content .icon {
-    padding: 4px 8px 2px;
+    padding: 4px 9px 2px;
     background-color: #e7ecf4;
     border-radius: 50%; }
     .content .icon:hover {
@@ -83,10 +100,81 @@
     .content .icon .fa-chevron-down {
       color: #9db0cb;
       font-size: 10px; }
+  .content .menu-details .title-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 60px; }
+    .content .menu-details .title-list .title-card {
+      background-color: #f6f8fb;
+      width: 170px;
+      height: 160px;
+      border-radius: 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+      .content .menu-details .title-list .title-card .icon-wrapper {
+        background-color: #e7ecf4;
+        border-radius: 8px;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .content .menu-details .title-list .title-card .icon-wrapper .icon-container {
+          width: 39px;
+          height: 39px;
+          border-radius: 8px;
+          background-color: #20c5ba;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          .content .menu-details .title-list .title-card .icon-wrapper .icon-container .fa-chevron-down {
+            color: white; }
+      .content .menu-details .title-list .title-card .main-title {
+        color: #253343;
+        font-size: 16px;
+        font-weight: bold;
+        padding-bottom: 10px;
+        padding-top: 15px; }
+      .content .menu-details .title-list .title-card .subtitle {
+        color: #6a7d9b;
+        font-size: 16px; }
+  .content .menu-details .description {
+    padding: 60px 90px; }
+    .content .menu-details .description .icon-wrapper {
+      background-color: #e7ecf4;
+      border-radius: 8px;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .content .menu-details .description .icon-wrapper .icon-container {
+        width: 39px;
+        height: 39px;
+        border-radius: 8px;
+        background-color: #20c5ba;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .content .menu-details .description .icon-wrapper .icon-container .fa-chevron-down {
+          color: white; }
+    .content .menu-details .description ul li .menu-text::before {
+      content: "\2022";
+      /* Add content: \2022 is the CSS Code/unicode for a bullet */
+      color: #20c5ba;
+      font-weight: bold;
+      width: 1em;
+      margin-left: 1em; }
 
 * {
   margin: 0;
   padding: 0; }
+
+ul {
+  margin: 0; }
 
 html,
 body {
@@ -101,8 +189,7 @@ body {
 .main-container {
   height: 100%;
   width: 1140px;
-  margin: 0 auto;
-  background-color: white; }
+  margin: 0 auto; }
 
 .d-flex {
   display: flex; }
