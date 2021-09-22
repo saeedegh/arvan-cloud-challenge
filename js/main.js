@@ -6,6 +6,9 @@ const uploadResum = (e) => {
     // console.log("!!!file", e.target.files[0]);
     var text = document.createTextNode(e.target.files[0].name);
     label.appendChild(text);
+    label.classList.add("active-file-x");
+  } else {
+    label.classList.remove("active-file-x");
   }
 };
 

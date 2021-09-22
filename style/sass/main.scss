@@ -76,6 +76,10 @@ body {
   }
 }
 
+.active-file-x {
+  @include active-file-uploader;
+}
+
 .w100 {
   width: 100%;
 }
