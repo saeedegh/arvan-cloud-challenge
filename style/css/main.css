@@ -309,11 +309,15 @@
             border-top: 0;
             padding: 10px;
             font-family: YekanBakh; }
-          #section-3 .form-section .form-inputs-container .w50 .form-item .file-info {
+          #section-3 .form-section .form-inputs-container .w50 .form-item .file-info-container {
             font-size: 14px;
-            color: #9db0cb;
             display: flex;
             justify-content: end; }
+            #section-3 .form-section .form-inputs-container .w50 .form-item .file-info-container .file-info {
+              color: #9db0cb; }
+            #section-3 .form-section .form-inputs-container .w50 .form-item .file-info-container .file-warn {
+              color: red;
+              display: none; }
 
 * {
   margin: 0;

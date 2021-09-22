@@ -316,10 +316,16 @@
                                         <label class="custom-file-upload" id="resume-file-label">
                                             <input type="file" id="resume-file" onchange="uploadResum(event)"
                                                 accept=".pdf" />
-                                            <button class="btn file-btn" onclick="uploadBtnHandler(event)">انتخاب فایل
+                                            <span id="resume-label-text"></span>
+                                            <button class="btn file-btn" onclick="resumeBtnClickHandler(event)">انتخاب
+                                                فایل
                                                 pdf</button>
                                         </label>
-                                        <div class="file-info"><span>حداکثر حجم مجاز فایل 1 مگابایت باشد</span> </div>
+                                        <div class="file-info-container">
+                                            <span class="file-info" id="resum-info">حداکثر حجم مجاز فایل 1
+                                                مگابایت باشد</span>
+                                            <span class="file-warn" id="resum-warn">فایل بزرگتر از حد مجاز است</span>
+                                        </div>
 
                                     </div>
                                 </div>
