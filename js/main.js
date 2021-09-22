@@ -3,6 +3,9 @@ const typesElem = document.getElementById("types");
 const typeItems = typesElem.getElementsByClassName("list-item");
 const levelsElem = document.getElementById("levels");
 const levelItems = levelsElem.getElementsByClassName("list-item");
+
+typesElem.style.display = "none";
+levelsElem.style.display = "none";
 //
 const selectBoxHandler = (e, index, inputID, listID) => {
   let selectedType = "";
