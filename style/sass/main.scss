@@ -18,7 +18,10 @@ ul {
 }
 
 html,
-body {
+body,
+input,
+button,
+textarea {
   font-family: YekanBakh;
   font-weight: normal;
   font-size: $main_font_size;
@@ -40,6 +43,9 @@ body {
 }
 .justify-space-between {
   justify-content: space-between;
+}
+.justify-end {
+  justify-content: flex-end;
 }
 .align-center {
   align-items: center;

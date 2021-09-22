@@ -206,7 +206,7 @@
 
 #section-3 {
   background-color: white;
-  padding: 128px 0px 229px; }
+  padding: 128px 0px; }
   #section-3 .main-container {
     padding: 0 96px; }
   #section-3 .title {
@@ -377,6 +377,19 @@
                 cursor: pointer;
                 background-color: #e9edf5;
                 color: #20c5ba; }
+  #section-3 .btn {
+    height: 40px;
+    width: 188px;
+    background-color: #eef2f7;
+    color: #9db0cb;
+    border-radius: 12px;
+    border: none; }
+    #section-3 .btn.active {
+      background-color: #20c5ba;
+      color: white; }
+    #section-3 .btn:hover {
+      background-color: #009191;
+      color: white; }
 
 * {
   margin: 0;
@@ -387,7 +400,10 @@ ul {
   margin: 0; }
 
 html,
-body {
+body,
+input,
+button,
+textarea {
   font-family: YekanBakh;
   font-weight: normal;
   font-size: 18px; }
@@ -406,6 +422,9 @@ body {
 
 .justify-space-between {
   justify-content: space-between; }
+
+.justify-end {
+  justify-content: flex-end; }
 
 .align-center {
   align-items: center; }

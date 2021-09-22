@@ -1,6 +1,6 @@
 #section-3 {
   background-color: white;
-  padding: 128px 0px 229px;
+  padding: 128px 0px;
   .main-container {
     padding: 0 96px;
   }
@@ -200,6 +200,25 @@
           }
         }
       }
+    }
+  }
+
+  .btn {
+    height: 40px;
+    width: 188px;
+    background-color: $gray_lighten_3;
+    color: $gray_lighten_6;
+    border-radius: 12px;
+    border: none;
+
+    &.active {
+      background-color: $primary_color;
+      color: white;
+    }
+
+    &:hover {
+      background-color: $green_darken_5;
+      color: white;
     }
   }
 }
