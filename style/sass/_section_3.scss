@@ -33,166 +33,168 @@
     .form-inputs-container {
       padding: 26px 0;
       flex-wrap: wrap;
-      .w50 {
-        padding: 8px 0;
 
-        .form-item {
+      .form-item {
+        display: flex;
+        align-items: flex-start;
+        padding: 0 50px;
+        margin-bottom: 20px;
+
+        .form-label-star {
+          color: $primary_color;
+          padding: 1px 10px;
+          font-size: 21px;
+          font-weight: bold;
+        }
+
+        input,
+        select,
+        option,
+        textarea {
+          font-family: YekanBakh;
+          font-size: $main_font_size;
+          background-color: white;
+          width: 100%;
+          height: 40px;
+          border: 1px solid $gray_lighten_5;
+          border-radius: 12px;
+          outline: none;
+          padding: 10px;
+
+          &:hover,
+          &:active,
+          &:focus,
+          &:focus-within,
+          &:focus-visible {
+            border: 2px solid $primary_color;
+            border-radius: 12px;
+          }
+
+          &:disabled {
+            background-color: $gray_lighten_2;
+          }
+        }
+
+        textarea {
+          height: 200px;
+        }
+        ::placeholder {
+          /* Chrome, Firefox, Opera, Safari 10.1+ */
+          color: $gray_lighten_6;
+          opacity: 1; /* Firefox */
+          font-family: YekanBakh;
+          font-size: 16px;
+        }
+
+        :-ms-input-placeholder {
+          /* Internet Explorer 10-11 */
+          color: $gray_lighten_6;
+          font-family: YekanBakh;
+          font-size: 16px;
+        }
+
+        ::-ms-input-placeholder {
+          /* Microsoft Edge */
+          color: $gray_lighten_6;
+          font-family: YekanBakh;
+          font-size: 16px;
+        }
+
+        label.custom-file-upload {
+          width: 100%;
+          height: 40px;
+          border: 1px solid $gray_lighten_5;
+          border-radius: 12px;
+          outline: none;
+          padding: 10px;
+          display: inline-block;
+          cursor: pointer;
+          background-color: white;
+          margin-bottom: 0 !important;
+          position: relative;
+          font-size: 14px;
+          font-weight: bold;
+          color: $primary_color;
+
+          input[type="file"] {
+            display: none !important;
+          }
+          &:hover,
+          &:active {
+            @include active-file-uploader;
+          }
+        }
+
+        .file-btn {
+          position: absolute;
+          left: 0;
+          top: 0;
+          height: 39px;
+          border-radius: 12px;
+          background-color: $gray_lighten_3;
+          color: $gray_lighten_6;
+          font-weight: bold;
+          font-size: 16px;
+          border: 1px solid $gray_lighten_5;
+          border-left: 0;
+          border-top: 0;
+          padding: 10px;
+          font-family: YekanBakh;
+        }
+        .file-info-container {
+          font-size: 14px;
           display: flex;
-          align-items: center;
-          padding: 0 50px;
-
-          .form-label-star {
-            color: $primary_color;
-            padding: 1px 10px;
-            font-size: 21px;
-            font-weight: bold;
-          }
-
-          input,
-          select,
-          option {
-            font-family: YekanBakh;
-            font-size: $main_font_size;
-            background-color: white;
-            width: 100%;
-            height: 40px;
-            border: 1px solid $gray_lighten_5;
-            border-radius: 12px;
-            outline: none;
-            padding: 10px;
-
-            &:hover,
-            &:active,
-            &:focus,
-            &:focus-within,
-            &:focus-visible {
-              border: 2px solid $primary_color;
-              border-radius: 12px;
-            }
-
-            &:disabled {
-              background-color: $gray_lighten_2;
-            }
-          }
-
-          ::placeholder {
-            /* Chrome, Firefox, Opera, Safari 10.1+ */
+          justify-content: end;
+          .file-info {
             color: $gray_lighten_6;
-            opacity: 1; /* Firefox */
-            font-family: YekanBakh;
-            font-size: 16px;
           }
-
-          :-ms-input-placeholder {
-            /* Internet Explorer 10-11 */
-            color: $gray_lighten_6;
-            font-family: YekanBakh;
-            font-size: 16px;
+          .file-warn {
+            color: red;
+            display: none;
           }
+        }
+        .form-select-wrapper {
+          position: relative;
+        }
+        // .form-select {
+        // }
+        .icon {
+          position: absolute;
+          top: 12px;
+          left: 18px;
+          color: #9db0cb;
+          font-size: 15px;
+          color: $gray_lighten_6;
 
-          ::-ms-input-placeholder {
-            /* Microsoft Edge */
-            color: $gray_lighten_6;
-            font-family: YekanBakh;
-            font-size: 16px;
-          }
-
-          label.custom-file-upload {
-            width: 100%;
-            height: 40px;
-            border: 1px solid $gray_lighten_5;
-            border-radius: 12px;
-            outline: none;
-            padding: 10px;
-            display: inline-block;
+          &:hover {
             cursor: pointer;
-            background-color: white;
-            margin-bottom: 0 !important;
-            position: relative;
-            font-size: 14px;
-            font-weight: bold;
-            color: $primary_color;
-
-            input[type="file"] {
-              display: none !important;
-            }
-            &:hover,
-            &:active {
-              @include active-file-uploader;
-            }
           }
+        }
 
-          .file-btn {
-            position: absolute;
-            left: 0;
-            top: 0;
-            height: 39px;
-            border-radius: 12px;
-            background-color: $gray_lighten_3;
-            color: $gray_lighten_6;
-            font-weight: bold;
+        ul.form-option-container {
+          position: absolute;
+          top: -2px;
+          left: 0;
+          margin-top: 2px;
+          width: 100%;
+          background-color: white;
+          border: 1px solid #d5dde7;
+          border-radius: 12px;
+
+          list-style: none;
+
+          li {
+            height: 40px;
+            padding: 10px 20px;
             font-size: 16px;
-            border: 1px solid $gray_lighten_5;
-            border-left: 0;
-            border-top: 0;
-            padding: 10px;
-            font-family: YekanBakh;
-          }
-          .file-info-container {
-            font-size: 14px;
-            display: flex;
-            justify-content: end;
-            .file-info {
-              color: $gray_lighten_6;
-            }
-            .file-warn {
-              color: red;
-              display: none;
-            }
-          }
-          .form-select-wrapper {
-            position: relative;
-          }
-          // .form-select {
-          // }
-          .icon {
-            position: absolute;
-            top: 12px;
-            left: 18px;
-            color: #9db0cb;
-            font-size: 15px;
-            color: $gray_lighten_6;
-
-            &:hover {
-              cursor: pointer;
-            }
-          }
-
-          ul.form-option-container {
-            position: absolute;
-            top: -2px;
-            left: 0;
-            margin-top: 2px;
-            width: 100%;
-            background-color: white;
-            border: 1px solid #d5dde7;
             border-radius: 12px;
 
-            list-style: none;
-
-            li {
-              height: 40px;
-              padding: 10px 20px;
-              font-size: 16px;
-              border-radius: 12px;
-
-              &:not(:first-of-type) {
-                color: $gray_darken_2;
-                &:hover {
-                  cursor: pointer;
-                  background-color: #e9edf5;
-                  color: $primary_color;
-                }
+            &:not(:first-of-type) {
+              color: $gray_darken_2;
+              &:hover {
+                cursor: pointer;
+                background-color: #e9edf5;
+                color: $primary_color;
               }
             }
           }
