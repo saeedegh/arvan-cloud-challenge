@@ -129,6 +129,12 @@
             padding: 10px;
             font-family: YekanBakh;
           }
+          .file-info {
+            font-size: 14px;
+            color: $gray_lighten_6;
+            display: flex;
+            justify-content: end;
+          }
         }
       }
     }
