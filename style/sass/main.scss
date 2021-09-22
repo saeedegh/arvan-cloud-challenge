@@ -80,6 +80,10 @@ body {
   @include active-file-uploader;
 }
 
+.warning-file {
+  @include warning-file-uploader;
+}
+
 .w100 {
   width: 100%;
 }

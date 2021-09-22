@@ -10,5 +10,18 @@
     background-color: $primary_color !important;
     color: white !important;
     border: 1px solid $primary_color !important;
+    border-left: 0;
+    border-top: 0;
+  }
+}
+
+@mixin warning-file-uploader {
+  border: 1px solid red !important;
+  .file-btn {
+    background-color: $gray_lighten_3 !important;
+    color: red !important;
+    border: 1px solid red !important;
+    border-left: 0;
+    border-top: 0;
   }
 }

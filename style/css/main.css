@@ -291,7 +291,9 @@
               #section-3 .form-section .form-inputs-container .w50 .form-item label.custom-file-upload:hover .file-btn, #section-3 .form-section .form-inputs-container .w50 .form-item label.custom-file-upload:active .file-btn {
                 background-color: #20c5ba !important;
                 color: white !important;
-                border: 1px solid #20c5ba !important; }
+                border: 1px solid #20c5ba !important;
+                border-left: 0;
+                border-top: 0; }
           #section-3 .form-section .form-inputs-container .w50 .form-item .file-btn {
             position: absolute;
             left: 0;
@@ -378,7 +380,18 @@ body {
   .active-file-x .file-btn {
     background-color: #20c5ba !important;
     color: white !important;
-    border: 1px solid #20c5ba !important; }
+    border: 1px solid #20c5ba !important;
+    border-left: 0;
+    border-top: 0; }
+
+.warning-file {
+  border: 1px solid red !important; }
+  .warning-file .file-btn {
+    background-color: #eef2f7 !important;
+    color: red !important;
+    border: 1px solid red !important;
+    border-left: 0;
+    border-top: 0; }
 
 .w100 {
   width: 100%; }
