@@ -18,9 +18,6 @@
   flex-direction: column;
   padding-top: 54px;
   padding-bottom: 20px; }
-  .header .main-title {
-    color: #0b3a42;
-    font-size: 40px; }
   .header .sub-title {
     font-size: 18px;
     color: #155a6d; }
@@ -62,29 +59,18 @@
   background-color: white; }
   .content ul {
     list-style: none; }
+    .content ul li .menu-text::before {
+      content: "\2022";
+      /* Add content: \2022 is the CSS Code/unicode for a bullet */
+      color: #20c5ba;
+      font-weight: bold;
+      width: 1em;
+      margin-left: 1em; }
     .content ul li {
       padding: 25px 50px; }
       .content ul li.active {
         border: 3px solid #20c5ba;
         border-radius: 16px; }
-    .content ul .icon-wrapper {
-      background-color: #e7ecf4;
-      border-radius: 8px;
-      width: 50px;
-      height: 50px;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-      .content ul .icon-wrapper .icon-container {
-        width: 39px;
-        height: 39px;
-        border-radius: 8px;
-        background-color: #20c5ba;
-        display: flex;
-        justify-content: center;
-        align-items: center; }
-        .content ul .icon-wrapper .icon-container .fa-chevron-down {
-          color: white; }
   .content .icon {
     padding: 4px 9px 2px;
     background-color: #e7ecf4;
@@ -114,28 +100,7 @@
       justify-content: center;
       align-items: center;
       flex-direction: column; }
-      .content .menu-details .title-list .title-card .icon-wrapper {
-        background-color: #e7ecf4;
-        border-radius: 8px;
-        width: 50px;
-        height: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center; }
-        .content .menu-details .title-list .title-card .icon-wrapper .icon-container {
-          width: 39px;
-          height: 39px;
-          border-radius: 8px;
-          background-color: #20c5ba;
-          display: flex;
-          justify-content: center;
-          align-items: center; }
-          .content .menu-details .title-list .title-card .icon-wrapper .icon-container .fa-chevron-down {
-            color: white; }
-      .content .menu-details .title-list .title-card .main-title {
-        color: #253343;
-        font-size: 16px;
-        font-weight: bold;
+      .content .menu-details .title-list .title-card .title {
         padding-bottom: 10px;
         padding-top: 15px; }
       .content .menu-details .title-list .title-card .subtitle {
@@ -143,35 +108,200 @@
         font-size: 16px; }
   .content .menu-details .description {
     padding: 60px 90px; }
-    .content .menu-details .description .icon-wrapper {
-      background-color: #e7ecf4;
-      border-radius: 8px;
-      width: 50px;
-      height: 50px;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-      .content .menu-details .description .icon-wrapper .icon-container {
-        width: 39px;
-        height: 39px;
-        border-radius: 8px;
-        background-color: #20c5ba;
-        display: flex;
-        justify-content: center;
-        align-items: center; }
-        .content .menu-details .description .icon-wrapper .icon-container .fa-chevron-down {
-          color: white; }
-    .content .menu-details .description ul li .menu-text::before {
-      content: "\2022";
-      /* Add content: \2022 is the CSS Code/unicode for a bullet */
-      color: #20c5ba;
+    .content .menu-details .description ul {
+      font-size: 16px;
+      color: #6a7d9b;
+      list-style: none; }
+      .content .menu-details .description ul li {
+        padding: 10px 50px; }
+      .content .menu-details .description ul li .menu-text::before {
+        content: "\2022";
+        /* Add content: \2022 is the CSS Code/unicode for a bullet */
+        color: #20c5ba;
+        font-weight: bold;
+        width: 1em;
+        margin-left: 1em; }
+    .content .menu-details .description .title {
+      padding-right: 50px; }
+  .content .menu-details .menu-link {
+    border-radius: 16px;
+    border: 2px solid #e7ecf4;
+    margin: 0 60px;
+    padding: 12px 30px; }
+    .content .menu-details .menu-link .link-info {
+      padding: 0 50px; }
+      .content .menu-details .menu-link .link-info .url {
+        color: #6a7d9b;
+        font-size: 16px; }
+    .content .menu-details .menu-link .author {
+      color: #6a7d9b;
+      font-size: 16px;
       font-weight: bold;
-      width: 1em;
-      margin-left: 1em; }
+      border-radius: 16px;
+      border: 2px solid #e7ecf4;
+      padding: 5px 20px; }
+      .content .menu-details .menu-link .author .img-container {
+        width: 24px;
+        max-width: 24px;
+        height: 24px;
+        max-height: 24px; }
+        .content .menu-details .menu-link .author .img-container img {
+          width: 100%;
+          max-width: 100%;
+          max-height: 100%;
+          height: 100%;
+          border-radius: 10px !important; }
+
+#section-2 {
+  margin-top: 230px;
+  background-color: #eef2f7;
+  padding: 155px 0 465px;
+  min-height: 500px; }
+  #section-2 .title {
+    padding: 0 20px; }
+  #section-2 .subtitle {
+    color: #155a6d;
+    font-size: 18;
+    padding: 30px 0 60px; }
+  #section-2 .simple-tabs {
+    padding: 0 45px;
+    border-bottom: 1px solid #9db0cb; }
+    #section-2 .simple-tabs ul {
+      list-style: none;
+      position: relative; }
+      #section-2 .simple-tabs ul li {
+        display: inline-block;
+        color: #9db0cb;
+        padding: 0 51px; }
+        #section-2 .simple-tabs ul li .tab-title {
+          padding: 10px;
+          display: inline-block; }
+          #section-2 .simple-tabs ul li .tab-title:hover {
+            border-bottom: 2px solid #20c5ba;
+            color: #042623;
+            cursor: pointer; }
+        #section-2 .simple-tabs ul li.active {
+          color: #042623; }
+          #section-2 .simple-tabs ul li.active .tab-title {
+            border-bottom: 2px solid #20c5ba; }
+          #section-2 .simple-tabs ul li.active .tab-content {
+            background-color: white;
+            position: absolute;
+            top: 100%;
+            right: 0;
+            margin: 45px 51px 0 45px;
+            width: 921px;
+            color: #697d9a;
+            border: 1px solid #20c5ba;
+            padding: 35px; }
+            #section-2 .simple-tabs ul li.active .tab-content .first-title {
+              color: #0e7571;
+              font-size: 24px;
+              font-weight: bold; }
+            #section-2 .simple-tabs ul li.active .tab-content .details {
+              padding: 30px 0; }
+            #section-2 .simple-tabs ul li.active .tab-content .second-title {
+              color: #20c5ba;
+              font-weight: bold; }
+
+#section-3 {
+  background-color: white;
+  padding: 128px 0px 229px; }
+  #section-3 .main-container {
+    padding: 0 96px; }
+  #section-3 .title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #033432; }
+  #section-3 .subtitle {
+    color: #6e6e6e;
+    font-size: 16px;
+    padding: 16px 0 35px; }
+  #section-3 .form-section {
+    background-color: #f5f7fa;
+    border-radius: 16px;
+    padding: 25px 0px;
+    margin-bottom: 22px; }
+    #section-3 .form-section .form-section-title {
+      color: #155a6d;
+      font-size: 22px;
+      border-right: 4px solid #20c5ba;
+      padding-right: 20px;
+      border-top-right-radius: -16px; }
+    #section-3 .form-section .form-inputs-container {
+      padding: 26px 0;
+      flex-wrap: wrap; }
+      #section-3 .form-section .form-inputs-container .w50 {
+        padding: 8px 0; }
+        #section-3 .form-section .form-inputs-container .w50 .form-item {
+          display: flex;
+          align-items: center;
+          padding: 0 50px; }
+          #section-3 .form-section .form-inputs-container .w50 .form-item .form-label-star {
+            color: #20c5ba;
+            padding: 1px 10px;
+            font-size: 21px;
+            font-weight: bold; }
+          #section-3 .form-section .form-inputs-container .w50 .form-item input {
+            width: 100%;
+            height: 40px;
+            border: 1px solid #dbe4f2;
+            border-radius: 12px;
+            outline: none;
+            padding: 10px; }
+            #section-3 .form-section .form-inputs-container .w50 .form-item input:hover, #section-3 .form-section .form-inputs-container .w50 .form-item input:active, #section-3 .form-section .form-inputs-container .w50 .form-item input:focus, #section-3 .form-section .form-inputs-container .w50 .form-item input:focus-within, #section-3 .form-section .form-inputs-container .w50 .form-item input:focus-visible {
+              border: 2px solid #20c5ba;
+              border-radius: 12px; }
+          #section-3 .form-section .form-inputs-container .w50 .form-item ::placeholder {
+            /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: #9db0cb;
+            opacity: 1;
+            /* Firefox */
+            font-family: YekanBakh;
+            font-size: 16px; }
+          #section-3 .form-section .form-inputs-container .w50 .form-item :-ms-input-placeholder {
+            /* Internet Explorer 10-11 */
+            color: #9db0cb;
+            font-family: YekanBakh;
+            font-size: 16px; }
+          #section-3 .form-section .form-inputs-container .w50 .form-item ::-ms-input-placeholder {
+            /* Microsoft Edge */
+            color: #9db0cb;
+            font-family: YekanBakh;
+            font-size: 16px; }
+          #section-3 .form-section .form-inputs-container .w50 .form-item label.custom-file-upload {
+            width: 100%;
+            height: 40px;
+            border: 1px solid #dbe4f2;
+            border-radius: 12px;
+            outline: none;
+            padding: 10px;
+            display: inline-block;
+            cursor: pointer;
+            background-color: white;
+            margin-bottom: 0 !important;
+            position: relative; }
+            #section-3 .form-section .form-inputs-container .w50 .form-item label.custom-file-upload input[type="file"] {
+              display: none !important; }
+          #section-3 .form-section .form-inputs-container .w50 .form-item .file-btn {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 39px;
+            border-radius: 12px;
+            background-color: #eef2f7;
+            color: #9db0cb;
+            font-weight: bold;
+            font-size: 16px;
+            border: 1px solid #dbe4f2;
+            border-left: 0;
+            border-top: 0;
+            padding: 10px; }
 
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  box-sizing: border-box; }
 
 ul {
   margin: 0; }
@@ -199,3 +329,43 @@ body {
 
 .align-center {
   align-items: center; }
+
+.main-title {
+  color: #0b3a42;
+  font-size: 40px; }
+
+.custom-title {
+  color: #253343;
+  font-size: 16px;
+  font-weight: bold; }
+
+.icon-wrapper {
+  background-color: #e7ecf4;
+  border-radius: 8px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .icon-wrapper .icon-container {
+    width: 39px;
+    height: 39px;
+    border-radius: 8px;
+    background-color: #20c5ba;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .icon-wrapper .icon-container .fa-chevron-down {
+      color: white; }
+
+.w100 {
+  width: 100%; }
+
+.w80 {
+  width: 80%; }
+
+.w50 {
+  width: 50%; }
+
+.w20 {
+  width: 20%; }

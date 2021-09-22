@@ -7,8 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="./node_modules/@fortawesome/fontawesome-free/js/all.js"></script>
     <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
-        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
     <link rel="stylesheet" href="./style/css/main.css">
     <title>arvanCloud-test</title>
 </head>
@@ -16,12 +15,12 @@
 
 <body>
     <div class="wrapper">
-        <div class="main-container">
-            <header class="header">
-                <h1 class="main-title">فهرست پروژه ها</h1>
-                <h3 class="sub-title">با فهرست پروژه های در جریان ابر اروان بیشتر آشنا شوید</h3>
-            </header>
-            <section id="section-1">
+        <header class="header">
+            <h1 class="main-title">فهرست پروژه ها</h1>
+            <h3 class="sub-title">با فهرست پروژه های در جریان ابر اروان بیشتر آشنا شوید</h3>
+        </header>
+        <section id="section-1">
+            <div class="main-container">
                 <div class="iconic-tabs">
                     <ul>
                         <li>
@@ -74,7 +73,7 @@
                                                 <i class="fa fa-chevron-down" aria-hidden="true"></i>
                                             </div>
                                         </div>
-                                        <div class="main-title">درخواست دهنده</div>
+                                        <div class="title custom-title">درخواست دهنده</div>
                                         <div class="subtitle">تیم CDN</div>
                                     </div>
                                     <div class="title-card">
@@ -83,7 +82,7 @@
                                                 <i class="fa fa-chevron-down" aria-hidden="true"></i>
                                             </div>
                                         </div>
-                                        <div class="main-title">روش اجرا و ارائه </div>
+                                        <div class="title custom-title">روش اجرا و ارائه </div>
                                         <div class="subtitle">Opensource/Github</div>
                                     </div>
                                     <div class="title-card">
@@ -92,7 +91,7 @@
                                                 <i class="fa fa-chevron-down" aria-hidden="true"></i>
                                             </div>
                                         </div>
-                                        <div class="main-title">زبان پروژه </div>
+                                        <div class="title custom-title">زبان پروژه </div>
                                         <div class="subtitle">Python </div>
                                     </div>
                                     <div class="title-card">
@@ -101,7 +100,7 @@
                                                 <i class="fa fa-chevron-down" aria-hidden="true"></i>
                                             </div>
                                         </div>
-                                        <div class="main-title">مبلغ پروژه </div>
+                                        <div class="title custom-title">مبلغ پروژه </div>
                                         <div class="subtitle"> 10,000,000 ریال</div>
                                     </div>
 
@@ -115,18 +114,52 @@
                                         </div>
                                     </div>
                                     <div>
-                                        <div>شرح پروژه</div>
+                                        <div class="title custom-title">شرح پروژه</div>
                                         <ul>
-                                            <li>نرم افزاری برای انتقال یک دامنه به همراه تنظیمات آن از روی کلودفلر به
-                                                آروان</li>
-                                            <li>یک دامنه را به همراه تنظیمات مربوطه از سرویس کلودفلر به آروان منتقل کند
-                                                API Key این نرم افزار باید بتواند با دریافت</li>
-                                            <li>حالت مطلوب میتواند یک وبسایت مستقل باشد و یا میتواند یک اسکریپتی که با
-                                                دریافت اطلاعات مربوطه این کار را انجام دهد</li>
+                                            <li>
+
+                                                <div class="menu-text">نرم افزاری برای انتقال یک دامنه به همراه تنظیمات
+                                                    آن از روی کلودفلر به
+                                                    آروان</div>
+                                            </li>
+                                            <li>
+
+                                                <div class="menu-text">یک دامنه را به همراه تنظیمات مربوطه از سرویس
+                                                    کلودفلر به آروان منتقل کند
+                                                    API Key این نرم افزار باید بتواند با دریافت</div>
+                                            </li>
+                                            <li>
+                                                <div class="menu-text">حالت مطلوب میتواند یک وبسایت مستقل باشد و یا
+                                                    میتواند یک اسکریپتی که با
+                                                    دریافت اطلاعات مربوطه این کار را انجام دهد</div>
+                                            </li>
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="menu-link"></div>
+                                <div class="menu-link d-flex justify-space-between align-center">
+
+                                    <div class="d-flex justify-space-between align-center">
+                                        <div class="icon-wrapper">
+                                            <div class="icon-container">
+                                                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                        <div class="link-info ">
+                                            <div class="title custom-title">
+                                                صفحه گیت هاب
+                                            </div>
+                                            <div class="url">https://github.com/features/codespaces</div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="author d-flex">
+                                        <div class="img-container">
+                                            <img src="./assets/img/profile.jfif" alt="">
+                                        </div>
+                                        <span class="name">توسط حسین سیدی </span>
+                                    </div>
+                                </div>
                             </div>
 
 
@@ -164,25 +197,150 @@
                         </li>
                     </ul>
                 </div>
-            </section>
-            <section id='section-2'>sec2</section>
-            <section id='section-3'>sec3</section>
-            <footer>footer</footer>
-        </div>
+            </div>
+        </section>
+        <section id='section-2'>
+            <div class="main-container">
+                <div class="title-container  d-flex">
+                    <div class="icon-wrapper">
+                        <div class="icon-container">
+                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="title main-title">
+                        ساختار جلسات
+                    </div>
+
+                </div>
+                <div class="subtitle">
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،
+                    چاپگرها و متون بلکه
+                    روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای
+                    متنوع با هدف بهبود
+                    ابزارهای کاربردی می باشد،
+                </div>
+
+            </div>
+            <div class="simple-tabs">
+                <ul class="main-container">
+                    <li class="active"><span class="tab-title">جلسات استراتژی</span>
+                        <div class="tab-content">
+                            <div class="first-title"> جلسات استراتژی</div>
+                            <div class="details">هر یک سال یک بار مجموعه جلساتی‌ تحت عنوان جلسات برنامه‌ریزی
+                                استراتژیک برگزار می‌شود. براساس این جلسات تیم راهبری داستان
+                                .یک‌ساله‌ی شرکت نگارش می‌شود OKR سال را می‌نویسد و پس از بحث و تبادل نظر
+                                سازمان متناسب با رخداد‌های ۶ ماه گذشته برگزار OKR پس از گذشت ۶ ماهه مجموعه جلساتی در
+                                راستای بازنگری و یا اصلاح استراتژی
+                                و یا
+                                .می‌شود
+                            </div>
+
+                            <div class="second-title">حاضرین</div>
+                            <div class="details">
+                                تمامی اعضای شرکت می‌توانند در این جلسات حضور پیدا کنند. حضور
+                                راهبر‌های هر تیم در این جلسات اجباری است</div>
+                        </div>
+                    </li>
+                    <li> <span class="tab-title">جلسات حاکمیت دایره</span> </li>
+                    <li> <span class="tab-title">جلسات برنامه ریزی اسپرینت/کانبان</span></li>
+                    <li><span class="tab-title">جلسات محصول</span></li>
+                </ul>
+            </div>
+
+        </section>
+        <section id='section-3'>
+            <div class="main-container">
+                <div class="title">فرم ثبت نام شبکه ابریارهای آروان</div>
+                <div class="subtitle">در صورتی که مایل باشید می‌توانید از برای ما رزومه بفرستید، لطفا فرم زیر را پر
+                    کنید</div>
+                <form>
+                    <div class="form-section" id="form-s1">
+                        <div class="form-section-title">
+                            اطلاعات فردی
+                        </div>
+                        <div class="form-inputs-container w100 d-flex align-center ">
+                            <div class="w50 ">
+                                <div class="w100 form-item">
+                                    <div class="w20 form-item-label">
+                                        <span class="form-label-text custom-title">نام</span>
+                                        <span class="form-label-star">*</span>
+                                    </div>
+
+                                    <div class="w80">
+                                        <input type="text" placeholder="نام و نام خانوادگی">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w50">
+                                <div class="w100 form-item">
+                                    <div class="w20 form-item-label">
+                                        <span class="form-label-text custom-title">تلفن</span><span
+                                            class="form-label-star">*</span>
+                                    </div>
+                                    <div class="w80"><input type="text" placeholder="0952654484"></div>
+                                </div>
+                            </div>
+                            <div class="w50">
+                                <div class="w100 form-item">
+                                    <div class="w20 form-item-label">
+                                        <span class="form-label-text custom-title">ایمیل</span>
+                                        <span class="form-label-star">*</span>
+                                    </div>
+                                    <div class="w80"><input type="text" placeholder="example@email.com"></div>
+                                </div>
+                            </div>
+                            <div class="w50">
+                                <div class="w100 form-item">
+                                    <div class="w20 form-item-label">
+                                        <span class="form-label-text custom-title">نام شرکت</span>
+                                    </div>
+                                    <div class="w80"><input type="text"></div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="form-section" id="form-s2">
+                        <div class="form-section-title">
+                            سوابق و تجربیات
+                        </div>
+                        <div class="form-inputs-container w100 d-flex align-center ">
+                            <div class="w50 ">
+                                <div class="w100 form-item">
+                                    <div class="w20 form-item-label">
+                                        <span class="form-label-text custom-title">رزومه</span><span
+                                            class="form-label-star">*</span>
+                                    </div>
+                                    <div class="w80">
+                                        <label class="custom-file-upload" id="resume-file-label">
+                                            <input type="file" id="resume-file" onchange="uploadResum(event)"
+                                                accept=".pdf" />
+                                            <button class="btn file-btn" onclick="uploadBtnHandler(event)">انتخاب فایل
+                                                pdf</button>
+                                        </label>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+            </div>
+            </form>
+
+    </div>
+    </section>
+    <footer>footer</footer>
     </div>
 
 
 </body>
 
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://code.jquery.com/jquery-1.12.4.min.js"
-    integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
-    crossorigin="anonymous"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
-    integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
-    crossorigin="anonymous"></script>
+
 <script src="./js/main.js"></script>
 
 </html>

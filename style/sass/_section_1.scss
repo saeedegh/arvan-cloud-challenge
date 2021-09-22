@@ -1,34 +1,9 @@
 @import "./variables";
-@mixin flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 @mixin flex-space-between {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-@mixin custom-icon {
-  .icon-wrapper {
-    background-color: $gray_lighten_2;
-    border-radius: 8px;
-    width: 50px;
-    height: 50px;
-    @include flex-center();
-
-    .icon-container {
-      width: 39px;
-      height: 39px;
-      border-radius: 8px;
-      background-color: $primary_color;
-      @include flex-center();
-
-      .fa-chevron-down {
-        color: white;
-      }
-    }
-  }
 }
 
 @mixin custom-list-style {
@@ -40,6 +15,7 @@
     margin-left: 1em;
   }
 }
+
 .content {
   padding: 55px 57px;
   border-radius: 16px;
@@ -47,6 +23,7 @@
   background-color: white;
   ul {
     list-style: none;
+    @include custom-list-style();
     li {
       padding: 25px 50px;
       &.active {
@@ -55,7 +32,7 @@
       }
     }
 
-    @include custom-icon();
+    // @include custom-icon();
   }
 
   .icon {
@@ -76,7 +53,7 @@
     }
     .fa-chevron-up,
     .fa-chevron-down {
-      color: $gray_lighen_4;
+      color: $gray_lighten_6;
       font-size: 10px;
     }
   }
@@ -96,12 +73,10 @@
         @include flex-center();
         flex-direction: column;
 
-        @include custom-icon();
+        // @include custom-icon();
 
-        .main-title {
-          color: $gray_darken_4;
-          font-size: 16px;
-          font-weight: bold;
+        .title {
+          //
           padding-bottom: 10px;
           padding-top: 15px;
         }
@@ -114,9 +89,59 @@
 
     .description {
       padding: 60px 90px;
-      @include custom-icon();
+      // @include custom-icon();
       ul {
+        font-size: 16px;
+        color: $gray_darken_2;
+        list-style: none;
+        li {
+          padding: 10px 50px;
+        }
         @include custom-list-style();
+      }
+
+      .title {
+        //
+        padding-right: 50px;
+      }
+    }
+
+    .menu-link {
+      border-radius: 16px;
+      border: 2px solid $gray_lighten_2;
+      margin: 0 60px;
+      padding: 12px 30px;
+
+      .link-info {
+        padding: 0 50px;
+        .url {
+          color: $gray_darken_2;
+          font-size: 16px;
+        }
+      }
+
+      .author {
+        color: $gray_darken_2;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 16px;
+        border: 2px solid $gray_lighten_2;
+        padding: 5px 20px;
+
+        .img-container {
+          width: 24px;
+          max-width: 24px;
+          height: 24px;
+          max-height: 24px;
+
+          img {
+            width: 100%;
+            max-width: 100%;
+            max-height: 100%;
+            height: 100%;
+            border-radius: 10px !important;
+          }
+        }
       }
     }
   }
