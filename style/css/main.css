@@ -339,11 +339,35 @@
             position: relative; }
           #section-3 .form-section .form-inputs-container .w50 .form-item .icon {
             position: absolute;
-            top: 10px;
-            left: 10px;
+            top: 12px;
+            left: 18px;
+            color: #9db0cb;
+            font-size: 15px;
             color: #9db0cb; }
             #section-3 .form-section .form-inputs-container .w50 .form-item .icon:hover {
               cursor: pointer; }
+          #section-3 .form-section .form-inputs-container .w50 .form-item .form-option-container {
+            position: absolute;
+            top: -1px;
+            left: 0;
+            margin-top: 2px;
+            width: 100%;
+            background-color: white;
+            border: 1px solid #d5dde7;
+            border-radius: 12px; }
+            #section-3 .form-section .form-inputs-container .w50 .form-item .form-option-container ul {
+              list-style: none; }
+              #section-3 .form-section .form-inputs-container .w50 .form-item .form-option-container ul li {
+                height: 40px;
+                padding: 10px 20px;
+                font-size: 16px;
+                border-radius: 12px; }
+                #section-3 .form-section .form-inputs-container .w50 .form-item .form-option-container ul li:not(:first-of-type) {
+                  color: #6a7d9b; }
+                  #section-3 .form-section .form-inputs-container .w50 .form-item .form-option-container ul li:not(:first-of-type):hover {
+                    cursor: pointer;
+                    background-color: #e9edf5;
+                    color: #20c5ba; }
 
 * {
   margin: 0;

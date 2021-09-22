@@ -155,12 +155,45 @@
           // }
           .icon {
             position: absolute;
-            top: 10px;
-            left: 10px;
+            top: 12px;
+            left: 18px;
+            color: #9db0cb;
+            font-size: 15px;
             color: $gray_lighten_6;
 
             &:hover {
               cursor: pointer;
+            }
+          }
+
+          .form-option-container {
+            position: absolute;
+            top: -1px;
+            left: 0;
+            margin-top: 2px;
+            width: 100%;
+            background-color: white;
+            border: 1px solid #d5dde7;
+            border-radius: 12px;
+
+            ul {
+              list-style: none;
+
+              li {
+                height: 40px;
+                padding: 10px 20px;
+                font-size: 16px;
+                border-radius: 12px;
+
+                &:not(:first-of-type) {
+                  color: $gray_darken_2;
+                  &:hover {
+                    cursor: pointer;
+                    background-color: #e9edf5;
+                    color: $primary_color;
+                  }
+                }
+              }
             }
           }
         }
