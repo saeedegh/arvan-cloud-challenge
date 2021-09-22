@@ -334,7 +334,7 @@
                             <div class="w50 ">
                                 <div class="w100 form-item">
                                     <div class="w20 form-item-label">
-                                        <span class="form-label-text custom-title"> پوزتفولیو</span>
+                                        <span class="form-label-text custom-title"> پورتفولیو</span>
                                     </div>
                                     <div class="w80">
                                         <label class="custom-file-upload" id="portfolio-file-label">
@@ -371,22 +371,49 @@
                                     </div>
                                     <div class="w80 form-select-wrapper">
 
-                                        <input type="text" disabled class="form-select">
-                                        <span class="icon"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
-                                        <div class="form-option-container">
-
-                                            <ul>
-                                                <li class="custom-title">نوع ابریار</li>
-                                                <li>ابریار کوچ ابری</li>
-                                                <li>ابریار فنی</li>
-                                                <li>ابریار بازارچه</li>
-                                                <li>ابریار آموزش</li>
-                                                <li>ابریار فروش</li>
-                                            </ul>
+                                        <div onclick="displayTypeItems('user-type','types')">
+                                            <input type="text" disabled class="form-select" id='user-type'>
+                                            <span class="icon">
+                                                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                            </span>
                                         </div>
+
+
+                                        <ul id="types" class="form-option-container">
+                                            <li class="custom-title list-item">نوع ابریار</li>
+                                            <li class="list-item" id='x-1'>ابریار کوچ ابری</li>
+                                            <li class="list-item" id='x-2'>ابریار فنی</li>
+                                            <li class="list-item" id='x-3'>ابریار بازارچه</li>
+                                            <li class="list-item" id='x-4'>ابریار آموزش</li>
+                                            <li class="list-item" id='x-5'> ابریار فروش</li>
+                                        </ul>
+
                                     </div>
                                 </div>
                             </div>
+                            <div class="w50">
+                                <div class="w100 form-item">
+                                    <div class="w20 form-item-label">
+                                        <span class="form-label-text custom-title"> سطح ابریار </span>
+                                    </div>
+                                    <div class="w80 form-select-wrapper">
+                                        <div onclick="displayTypeItems('user-level','levels')">
+                                            <input type="text" disabled class="form-select" id='user-level'>
+                                            <span class="icon">
+                                                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                            </span>
+                                        </div>
+                                        <ul id="levels" class="form-option-container">
+                                            <li class="custom-title list-item">سطح ابریار </li>
+                                            <li class="list-item"> سطح 1 </li>
+                                            <li class="list-item">سطح 2</li>
+                                            <li class="list-item">سطح 3 </li>
+                                            <li class="list-item">سطح 4 </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
             </div>

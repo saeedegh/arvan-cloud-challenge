@@ -1,4 +1,39 @@
 console.log("init");
+const typesElem = document.getElementById("types");
+const typeItems = typesElem.getElementsByClassName("list-item");
+const levelsElem = document.getElementById("levels");
+const levelItems = levelsElem.getElementsByClassName("list-item");
+//
+const selectBoxHandler = (e, index, inputID, listID) => {
+  let selectedType = "";
+  if (index === 0) {
+    selectedType = "";
+  } else {
+    selectedType = e.target.innerText;
+  }
+
+  document.getElementById(listID).style.display = "none";
+  document.getElementById(inputID).value = selectedType;
+};
+
+for (let index = 0; index < typeItems.length; index++) {
+  const listItem = typeItems[index];
+  listItem.addEventListener("click", (e) =>
+    selectBoxHandler(e, index, "user-type", "types")
+  );
+}
+//
+for (let index = 0; index < levelItems.length; index++) {
+  const listItem = levelItems[index];
+  listItem.addEventListener("click", (e) =>
+    selectBoxHandler(e, index, "user-level", "levels")
+  );
+}
+//
+
+const displayTypeItems = (inputId, listId) => {
+  document.getElementById(listId).style.display = "block";
+};
 
 const fileUploader = (
   e,
@@ -30,9 +65,10 @@ const fileUploader = (
     label.classList.remove("active-file-x", "warning-file");
   }
 };
-
+//
 const uploadHandler = (e, fileInputId) => {
   e.preventDefault();
   const file_element = document.getElementById(fileInputId);
   file_element.click();
 };
+//
