@@ -1,11 +1,14 @@
 console.log("init");
 
-const uploadResum = (e) => {
-  const label = document.getElementById("resume-file-label");
-  const labelText = document.getElementById("resume-label-text");
-  const fileInput = document.getElementById("resume-file");
-  const warningElem = document.getElementById("resum-warn");
-  const infoElem = document.getElementById("resum-info");
+const fileUploader = (
+  e,
+  [labelId, labelTextId, fileInputId, warningTextId, infoTextId]
+) => {
+  const label = document.getElementById(labelId);
+  const labelText = document.getElementById(labelTextId);
+  const fileInput = document.getElementById(fileInputId);
+  const warningElem = document.getElementById(warningTextId);
+  const infoElem = document.getElementById(infoTextId);
 
   if (e.target.files.length > 0) {
     if (e.target.files[0].size > 1000000) {
@@ -28,8 +31,8 @@ const uploadResum = (e) => {
   }
 };
 
-const resumeBtnClickHandler = (e) => {
+const uploadHandler = (e, fileInputId) => {
   e.preventDefault();
-  const file_element = document.getElementById("resume-file");
+  const file_element = document.getElementById(fileInputId);
   file_element.click();
 };

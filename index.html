@@ -314,10 +314,12 @@
                                     </div>
                                     <div class="w80">
                                         <label class="custom-file-upload" id="resume-file-label">
-                                            <input type="file" id="resume-file" onchange="uploadResum(event)"
+                                            <input type="file" id="resume-file"
+                                                onchange="fileUploader(event, ['resume-file-label', 'resume-label-text', 'resume-file', 'resum-warn', 'resum-info'])"
                                                 accept=".pdf" />
                                             <span id="resume-label-text"></span>
-                                            <button class="btn file-btn" onclick="resumeBtnClickHandler(event)">انتخاب
+                                            <button class="btn file-btn"
+                                                onclick="uploadHandler(event,'resume-file')">انتخاب
                                                 فایل
                                                 pdf</button>
                                         </label>
@@ -325,6 +327,33 @@
                                             <span class="file-info" id="resum-info">حداکثر حجم مجاز فایل 1
                                                 مگابایت باشد</span>
                                             <span class="file-warn" id="resum-warn">فایل بزرگتر از حد مجاز است</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="w50 ">
+                                <div class="w100 form-item">
+                                    <div class="w20 form-item-label">
+                                        <span class="form-label-text custom-title"> پوزتفولیو</span>
+                                    </div>
+                                    <div class="w80">
+                                        <label class="custom-file-upload" id="portfolio-file-label">
+                                            <input type="file" id="portfolio-file"
+                                                onchange="fileUploader(event,['portfolio-file-label', 'portfolio-label-text', 'portfolio-file', 'portfolio-warn', 'portfolio-info'])"
+                                                accept=".pdf" />
+                                            <span id="portfolio-label-text"></span>
+                                            <button class="btn file-btn"
+                                                onclick="uploadHandler(event,'portfolio-file')">انتخاب
+                                                فایل
+                                                pdf</button>
+                                        </label>
+                                        <div class="file-info-container">
+                                            <span class="file-info" id="portfolio-info">حداکثر حجم مجاز فایل 1
+                                                مگابایت باشد</span>
+                                            <span class="file-warn" id="portfolio-warn">فایل بزرگتر از حد مجاز
+                                                است</span>
                                         </div>
 
                                     </div>
