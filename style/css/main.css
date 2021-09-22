@@ -391,6 +391,10 @@
       background-color: #009191;
       color: white; }
 
+footer {
+  background-color: #f5f7fa;
+  padding: 100px; }
+
 * {
   margin: 0;
   padding: 0;
