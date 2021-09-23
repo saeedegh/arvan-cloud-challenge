@@ -1,6 +1,6 @@
 @media only screen and (max-width: 426px) {
   body {
-    background-color: pink;
+    // background-color: pink;
   }
 
   .main-title {
@@ -22,7 +22,7 @@
     padding-bottom: 30px;
     ul {
       font-size: $mobile_main_font_size;
-      overflow-x: scroll;
+      overflow-x: visible;
       display: flex;
 
       li {

@@ -516,8 +516,6 @@ textarea {
   width: 10%; }
 
 @media only screen and (max-width: 426px) {
-  body {
-    background-color: pink; }
   .main-title {
     font-size: 24px; }
   .header {
@@ -530,7 +528,7 @@ textarea {
     padding-bottom: 30px; }
     .iconic-tabs ul {
       font-size: 14px;
-      overflow-x: scroll;
+      overflow-x: visible;
       display: flex; }
       .iconic-tabs ul li {
         padding: 9px;
