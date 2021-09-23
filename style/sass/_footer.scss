@@ -1,4 +1,16 @@
 footer {
   background-color: $gray_lighten_4;
   padding: 100px;
+
+  ul {
+    @include flex-center();
+    padding-top: 30px;
+    li {
+      display: inline-block;
+      padding: 20px 37px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
 }

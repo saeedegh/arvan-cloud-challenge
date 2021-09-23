@@ -22,7 +22,6 @@
   border-top-right-radius: 0;
   background-color: white;
   ul {
-    list-style: none;
     @include custom-list-style();
     li {
       padding: 25px 50px;
@@ -93,7 +92,7 @@
       ul {
         font-size: 16px;
         color: $gray_darken_2;
-        list-style: none;
+
         li {
           padding: 10px 50px;
         }

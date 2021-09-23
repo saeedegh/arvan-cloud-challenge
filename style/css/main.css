@@ -25,7 +25,6 @@
 .iconic-tabs {
   background-color: #f5f7fa; }
   .iconic-tabs ul {
-    list-style: none;
     font-size: 18px; }
     .iconic-tabs ul li {
       display: inline-block;
@@ -57,20 +56,18 @@
   border-radius: 16px;
   border-top-right-radius: 0;
   background-color: white; }
-  .content ul {
-    list-style: none; }
-    .content ul li .menu-text::before {
-      content: "\2022";
-      /* Add content: \2022 is the CSS Code/unicode for a bullet */
-      color: #20c5ba;
-      font-weight: bold;
-      width: 1em;
-      margin-left: 1em; }
-    .content ul li {
-      padding: 25px 50px; }
-      .content ul li.active {
-        border: 3px solid #20c5ba;
-        border-radius: 16px; }
+  .content ul li .menu-text::before {
+    content: "\2022";
+    /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #20c5ba;
+    font-weight: bold;
+    width: 1em;
+    margin-left: 1em; }
+  .content ul li {
+    padding: 25px 50px; }
+    .content ul li.active {
+      border: 3px solid #20c5ba;
+      border-radius: 16px; }
   .content .icon {
     padding: 4px 9px 2px;
     background-color: #e7ecf4;
@@ -110,8 +107,7 @@
     padding: 60px 90px; }
     .content .menu-details .description ul {
       font-size: 16px;
-      color: #6a7d9b;
-      list-style: none; }
+      color: #6a7d9b; }
       .content .menu-details .description ul li {
         padding: 10px 50px; }
       .content .menu-details .description ul li .menu-text::before {
@@ -167,7 +163,6 @@
     padding: 0 45px;
     border-bottom: 1px solid #9db0cb; }
     #section-2 .simple-tabs ul {
-      list-style: none;
       position: relative; }
       #section-2 .simple-tabs ul li {
         display: inline-block;
@@ -364,8 +359,7 @@
           width: 100%;
           background-color: white;
           border: 1px solid #d5dde7;
-          border-radius: 12px;
-          list-style: none; }
+          border-radius: 12px; }
           #section-3 .form-section .form-inputs-container .form-item ul.form-option-container li {
             height: 40px;
             padding: 10px 20px;
@@ -394,6 +388,16 @@
 footer {
   background-color: #f5f7fa;
   padding: 100px; }
+  footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px; }
+    footer ul li {
+      display: inline-block;
+      padding: 20px 37px; }
+      footer ul li:hover {
+        cursor: pointer; }
 
 * {
   margin: 0;
@@ -401,7 +405,8 @@ footer {
   box-sizing: border-box; }
 
 ul {
-  margin: 0; }
+  margin: 0;
+  list-style: none; }
 
 html,
 body,
@@ -424,8 +429,17 @@ textarea {
 .d-flex {
   display: flex; }
 
+.flex-row {
+  flex-direction: row; }
+
+.flex-column {
+  flex-direction: column; }
+
 .justify-space-between {
   justify-content: space-between; }
+
+.justify-center {
+  justify-content: center; }
 
 .justify-end {
   justify-content: flex-end; }
