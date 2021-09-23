@@ -253,7 +253,8 @@
                 <div class="title">فرم ثبت نام شبکه ابریارهای آروان</div>
                 <div class="subtitle">در صورتی که مایل باشید می‌توانید از برای ما رزومه بفرستید، لطفا فرم زیر را پر
                     کنید</div>
-                <form>
+                <form onsubmit="formSubmitHandler(event)" id="myForm">
+                    <input type="text" id='test'>
                     <div class="form-section" id="form-s1">
                         <div class="form-section-title">
                             اطلاعات فردی
@@ -428,7 +429,7 @@
 
                     </div>
                     <div class="btn-container d-flex justify-end">
-                        <button class="btn">ثبت نام </button>
+                        <button class="btn" type="submit">ثبت نام </button>
                     </div>
             </div>
             </form>
