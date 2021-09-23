@@ -658,4 +658,10 @@ a {
     #section-3 .w50 {
       width: 100%; }
     #section-3 .form-section .form-inputs-container .form-item {
-      padding: 0 20px; } }
+      padding: 0 20px; }
+  footer {
+    padding: 0; }
+    footer ul {
+      flex-wrap: wrap; }
+      footer ul li {
+        padding: 10px 15px; } }

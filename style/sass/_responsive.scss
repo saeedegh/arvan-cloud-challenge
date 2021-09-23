@@ -204,4 +204,14 @@
       }
     }
   }
+
+  footer {
+    padding: 0;
+    ul {
+      flex-wrap: wrap;
+      li {
+        padding: 10px 15px;
+      }
+    }
+  }
 }
