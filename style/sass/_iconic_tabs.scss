@@ -20,15 +20,9 @@
       min-width: 213px;
       max-width: 213px;
 
-      &:hover {
-        @include active-tab();
-      }
+      &:hover,
       &.active {
         @include active-tab();
-      }
-
-      & .loader-icon {
-        display: none;
       }
 
       .tab-item {

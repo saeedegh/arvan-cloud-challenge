@@ -10,7 +10,39 @@
   .header {
     align-items: flex-start;
     .sub-title {
-      font-size: 14px;
+      font-size: $mobile_main_font_size;
+    }
+  }
+
+  .main-container {
+    width: 85%;
+  }
+
+  .iconic-tabs {
+    padding-bottom: 30px;
+    ul {
+      font-size: $mobile_main_font_size;
+      overflow-x: scroll;
+      display: flex;
+
+      li {
+        padding: 9px;
+        background-color: $primary_color;
+        color: white;
+        border-radius: 12px;
+        min-width: 134px;
+        margin-left: 12px;
+
+        &:hover,
+        &.active {
+          background-color: $primary_light_color;
+          color: $primary_color;
+        }
+
+        .tab-icon {
+          display: none;
+        }
+      }
     }
   }
 }

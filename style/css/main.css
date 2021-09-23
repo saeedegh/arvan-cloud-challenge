@@ -35,16 +35,10 @@
       margin-left: 30px;
       min-width: 213px;
       max-width: 213px; }
-      .iconic-tabs ul li:hover {
+      .iconic-tabs ul li:hover, .iconic-tabs ul li.active {
         cursor: pointer;
         background-color: white;
         color: #6a7d9b; }
-      .iconic-tabs ul li.active {
-        cursor: pointer;
-        background-color: white;
-        color: #6a7d9b; }
-      .iconic-tabs ul li .loader-icon {
-        display: none; }
       .iconic-tabs ul li .tab-item {
         display: flex;
         justify-content: center; }
@@ -528,4 +522,24 @@ textarea {
   .header {
     align-items: flex-start; }
     .header .sub-title {
-      font-size: 14px; } }
+      font-size: 14px; }
+  .main-container {
+    width: 85%; }
+  .iconic-tabs {
+    padding-bottom: 30px; }
+    .iconic-tabs ul {
+      font-size: 14px;
+      overflow-x: scroll;
+      display: flex; }
+      .iconic-tabs ul li {
+        padding: 9px;
+        background-color: #20c5ba;
+        color: white;
+        border-radius: 12px;
+        min-width: 134px;
+        margin-left: 12px; }
+        .iconic-tabs ul li:hover, .iconic-tabs ul li.active {
+          background-color: rgba(32, 197, 186, 0.1);
+          color: #20c5ba; }
+        .iconic-tabs ul li .tab-icon {
+          display: none; } }
