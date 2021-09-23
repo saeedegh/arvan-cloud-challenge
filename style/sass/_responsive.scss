@@ -45,4 +45,38 @@
       }
     }
   }
+
+  #section-1 {
+    .content {
+      padding: 20px;
+      ul {
+        li {
+          background-color: #e7ecf4;
+          border-radius: 12px;
+          padding: 10px;
+          margin-bottom: 10px;
+
+          .menu-text::before {
+            content: "";
+          }
+
+          &.active {
+            background-color: white;
+          }
+        }
+      }
+
+      .menu-details {
+        .title-list {
+          flex-direction: column;
+          padding: 10px;
+
+          .title-card {
+            width: 100%;
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
 }

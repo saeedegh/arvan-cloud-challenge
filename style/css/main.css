@@ -80,6 +80,7 @@
       font-size: 10px; }
   #section-1 .content .menu-details .title-list {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 10px 60px; }
@@ -541,4 +542,21 @@ textarea {
           background-color: rgba(32, 197, 186, 0.1);
           color: #20c5ba; }
         .iconic-tabs ul li .tab-icon {
-          display: none; } }
+          display: none; }
+  #section-1 .content {
+    padding: 20px; }
+    #section-1 .content ul li {
+      background-color: #e7ecf4;
+      border-radius: 12px;
+      padding: 10px;
+      margin-bottom: 10px; }
+      #section-1 .content ul li .menu-text::before {
+        content: ""; }
+      #section-1 .content ul li.active {
+        background-color: white; }
+    #section-1 .content .menu-details .title-list {
+      flex-direction: column;
+      padding: 10px; }
+      #section-1 .content .menu-details .title-list .title-card {
+        width: 100%;
+        margin-bottom: 20px; } }
