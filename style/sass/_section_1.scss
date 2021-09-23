@@ -92,6 +92,7 @@
         padding: 60px 90px;
         // @include custom-icon();
         ul {
+          padding: 0 50px;
           font-size: 16px;
           color: $gray_darken_2;
 
@@ -108,16 +109,26 @@
       }
 
       .menu-link {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
         border-radius: 16px;
         border: 2px solid $gray_lighten_2;
         margin: 0 60px;
         padding: 12px 30px;
+        .link-container {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
 
-        .link-info {
-          padding: 0 50px;
-          .url {
-            color: $gray_darken_2;
-            font-size: 16px;
+          .link-info {
+            padding: 0 50px;
+            .url {
+              color: $gray_darken_2;
+              font-size: 16px;
+            }
           }
         }
 
@@ -143,6 +154,10 @@
               border-radius: 10px !important;
             }
           }
+        }
+
+        .suggestion-btn {
+          display: none;
         }
       }
     }

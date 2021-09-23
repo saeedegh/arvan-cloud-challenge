@@ -29,6 +29,10 @@ textarea {
   font-size: $main_font_size;
   background-color: $background_gray;
 }
+a {
+  text-decoration: none;
+  color: $gray_darken_2;
+}
 
 .wrapper {
   height: 100%;

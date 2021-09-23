@@ -102,6 +102,7 @@
   #section-1 .content .menu-details .description {
     padding: 60px 90px; }
     #section-1 .content .menu-details .description ul {
+      padding: 0 50px;
       font-size: 16px;
       color: #6a7d9b; }
       #section-1 .content .menu-details .description ul li {
@@ -116,15 +117,24 @@
     #section-1 .content .menu-details .description .title {
       padding-right: 50px; }
   #section-1 .content .menu-details .menu-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     border-radius: 16px;
     border: 2px solid #e7ecf4;
     margin: 0 60px;
     padding: 12px 30px; }
-    #section-1 .content .menu-details .menu-link .link-info {
-      padding: 0 50px; }
-      #section-1 .content .menu-details .menu-link .link-info .url {
-        color: #6a7d9b;
-        font-size: 16px; }
+    #section-1 .content .menu-details .menu-link .link-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center; }
+      #section-1 .content .menu-details .menu-link .link-container .link-info {
+        padding: 0 50px; }
+        #section-1 .content .menu-details .menu-link .link-container .link-info .url {
+          color: #6a7d9b;
+          font-size: 16px; }
     #section-1 .content .menu-details .menu-link .author {
       color: #6a7d9b;
       font-size: 16px;
@@ -143,6 +153,8 @@
           max-height: 100%;
           height: 100%;
           border-radius: 10px !important; }
+    #section-1 .content .menu-details .menu-link .suggestion-btn {
+      display: none; }
 
 #section-2 {
   margin-top: 230px;
@@ -414,6 +426,10 @@ textarea {
   font-size: 18px;
   background-color: #f5f7fa; }
 
+a {
+  text-decoration: none;
+  color: #6a7d9b; }
+
 .wrapper {
   height: 100%; }
 
@@ -559,4 +575,31 @@ textarea {
       padding: 10px; }
       #section-1 .content .menu-details .title-list .title-card {
         width: 100%;
-        margin-bottom: 20px; } }
+        margin-bottom: 20px; }
+    #section-1 .content .menu-details .description {
+      margin: 0 10px;
+      padding: 30px;
+      border: 1px solid #e7ecf4;
+      border-radius: 12px; }
+      #section-1 .content .menu-details .description ul {
+        padding: 20px 0; }
+        #section-1 .content .menu-details .description ul li {
+          padding: 10px 0;
+          background-color: white;
+          margin-bottom: 0; }
+    #section-1 .content .menu-details .menu-link {
+      margin: 10px;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: flex-start; }
+      #section-1 .content .menu-details .menu-link .author {
+        display: none; }
+      #section-1 .content .menu-details .menu-link .suggestion-btn {
+        display: block;
+        background-color: #20c5ba;
+        color: white;
+        border-radius: 12px;
+        border: none;
+        width: 100%;
+        height: 40px;
+        margin: 10px auto; } }
