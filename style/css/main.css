@@ -367,7 +367,8 @@
           width: 100%;
           background-color: white;
           border: 1px solid #d5dde7;
-          border-radius: 12px; }
+          border-radius: 12px;
+          z-index: 1000; }
           #section-3 .form-section .form-inputs-container .form-item ul.form-option-container li {
             height: 40px;
             padding: 10px 20px;
@@ -649,4 +650,12 @@ a {
           #section-2 .simple-tabs ul li .tab-title {
             padding: 0; }
             #section-2 .simple-tabs ul li .tab-title:hover {
-              border: none; } }
+              border: none; }
+  #section-3 {
+    padding: 70px 0; }
+    #section-3 .main-container {
+      padding: 0; }
+    #section-3 .w50 {
+      width: 100%; }
+    #section-3 .form-section .form-inputs-container .form-item {
+      padding: 0 20px; } }
