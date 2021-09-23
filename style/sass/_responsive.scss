@@ -156,6 +156,23 @@
           &.active {
             background-color: $primary_light_color;
             color: $primary_color;
+            .tab-content {
+              width: 100%;
+              border-radius: 12px;
+              margin: 17px 0;
+              padding: 20px;
+
+              .details {
+                padding: 10px 0;
+                width: 100%;
+                word-break: normal;
+                white-space: normal;
+              }
+            }
+
+            .tab-title {
+              border: none;
+            }
           }
 
           .tab-title {

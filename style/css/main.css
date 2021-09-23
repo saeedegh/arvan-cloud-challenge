@@ -634,6 +634,18 @@ a {
           #section-2 .simple-tabs ul li:hover, #section-2 .simple-tabs ul li.active {
             background-color: rgba(32, 197, 186, 0.1);
             color: #20c5ba; }
+            #section-2 .simple-tabs ul li:hover .tab-content, #section-2 .simple-tabs ul li.active .tab-content {
+              width: 100%;
+              border-radius: 12px;
+              margin: 17px 0;
+              padding: 20px; }
+              #section-2 .simple-tabs ul li:hover .tab-content .details, #section-2 .simple-tabs ul li.active .tab-content .details {
+                padding: 10px 0;
+                width: 100%;
+                word-break: normal;
+                white-space: normal; }
+            #section-2 .simple-tabs ul li:hover .tab-title, #section-2 .simple-tabs ul li.active .tab-title {
+              border: none; }
           #section-2 .simple-tabs ul li .tab-title {
             padding: 0; }
             #section-2 .simple-tabs ul li .tab-title:hover {
