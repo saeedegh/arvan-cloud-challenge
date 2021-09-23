@@ -519,3 +519,13 @@ textarea {
 
 .w10 {
   width: 10%; }
+
+@media only screen and (max-width: 426px) {
+  body {
+    background-color: pink; }
+  .main-title {
+    font-size: 24px; }
+  .header {
+    align-items: flex-start; }
+    .header .sub-title {
+      font-size: 14px; } }
