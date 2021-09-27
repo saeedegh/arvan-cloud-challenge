@@ -3,6 +3,9 @@ const typesElem = document.getElementById("types");
 const typeItems = typesElem.getElementsByClassName("list-item");
 const levelsElem = document.getElementById("levels");
 const levelItems = levelsElem.getElementsByClassName("list-item");
+const section1 = document.getElementById("section-1");
+const iconicTabs = section1.getElementsByClassName("menu-link");
+const s1TabContents = section1.getElementsByClassName("content");
 
 typesElem.style.display = "none";
 levelsElem.style.display = "none";
@@ -108,3 +111,17 @@ const formSubmitHandler = (event) => {
   request.open("post", "https://coda.io/@saeede-work/test1");
   request.send(formData);
 };
+
+for (let i = 0; i < iconicTabs.length; i++) {
+  iconicTabs[i].addEventListener("click", () => {
+    for (let j = 0; j < iconicTabs.length; j++) {
+      if (i === j) {
+        iconicTabs[j].classList.add("active");
+        s1TabContents[j].classList.add("active");
+      } else {
+        iconicTabs[j].classList.remove("active");
+        s1TabContents[j].classList.remove("active");
+      }
+    }
+  });
+}

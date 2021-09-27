@@ -18,10 +18,14 @@
 
 #section-1 {
   .content {
+    display: none;
     padding: 55px 57px;
     border-radius: 16px;
     border-top-right-radius: 0;
     background-color: white;
+    &.active {
+      display: block;
+    }
     ul {
       @include custom-list-style();
       li {
