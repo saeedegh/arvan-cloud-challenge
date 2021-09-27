@@ -4,7 +4,7 @@ const typeItems = typesElem.getElementsByClassName("list-item");
 const levelsElem = document.getElementById("levels");
 const levelItems = levelsElem.getElementsByClassName("list-item");
 const section1 = document.getElementById("section-1");
-const iconicTabs = section1.getElementsByClassName("menu-link");
+const iconicTabs = section1.getElementsByClassName("tab-item");
 const s1TabContents = section1.getElementsByClassName("content");
 
 typesElem.style.display = "none";
