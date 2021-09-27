@@ -162,7 +162,7 @@
 #section-2 {
   margin-top: 230px;
   background-color: #eef2f7;
-  padding: 155px 0 465px;
+  padding: 155px 0;
   min-height: 500px; }
   #section-2 .title {
     padding: 0 20px; }
@@ -171,10 +171,10 @@
     font-size: 18px;
     padding: 30px 0 60px; }
   #section-2 .simple-tabs {
-    padding: 0 45px;
-    border-bottom: 1px solid #9db0cb; }
+    padding: 0 45px; }
     #section-2 .simple-tabs ul {
-      position: relative; }
+      position: relative;
+      border-bottom: 1px solid #9db0cb; }
       #section-2 .simple-tabs ul li {
         display: inline-block;
         color: #9db0cb;
@@ -190,25 +190,25 @@
           color: #042623; }
           #section-2 .simple-tabs ul li.active .tab-title {
             border-bottom: 2px solid #20c5ba; }
-          #section-2 .simple-tabs ul li.active .tab-content {
-            background-color: white;
-            position: absolute;
-            top: 100%;
-            right: 0;
-            margin: 45px 51px 0 45px;
-            width: 921px;
-            color: #697d9a;
-            border: 1px solid #20c5ba;
-            padding: 35px; }
-            #section-2 .simple-tabs ul li.active .tab-content .first-title {
-              color: #0e7571;
-              font-size: 24px;
-              font-weight: bold; }
-            #section-2 .simple-tabs ul li.active .tab-content .details {
-              padding: 30px 0; }
-            #section-2 .simple-tabs ul li.active .tab-content .second-title {
-              color: #20c5ba;
-              font-weight: bold; }
+    #section-2 .simple-tabs .tab-content {
+      display: none;
+      background-color: white;
+      margin: 45px auto;
+      width: 80%;
+      color: #697d9a;
+      border: 1px solid #20c5ba;
+      padding: 35px; }
+      #section-2 .simple-tabs .tab-content.active {
+        display: block; }
+      #section-2 .simple-tabs .tab-content .first-title {
+        color: #0e7571;
+        font-size: 24px;
+        font-weight: bold; }
+      #section-2 .simple-tabs .tab-content .details {
+        padding: 30px 0; }
+      #section-2 .simple-tabs .tab-content .second-title {
+        color: #20c5ba;
+        font-weight: bold; }
 
 #section-3 {
   background-color: white;

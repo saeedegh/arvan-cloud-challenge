@@ -4,8 +4,11 @@ const typeItems = typesElem.getElementsByClassName("list-item");
 const levelsElem = document.getElementById("levels");
 const levelItems = levelsElem.getElementsByClassName("list-item");
 const section1 = document.getElementById("section-1");
+const section2 = document.getElementById("section-2");
 const iconicTabs = section1.getElementsByClassName("tab-item");
 const s1TabContents = section1.getElementsByClassName("content");
+const simpleTabs = section2.getElementsByClassName("tab-item");
+const s2TabContents = section2.getElementsByClassName("tab-content");
 
 typesElem.style.display = "none";
 levelsElem.style.display = "none";
@@ -121,6 +124,20 @@ for (let i = 0; i < iconicTabs.length; i++) {
       } else {
         iconicTabs[j].classList.remove("active");
         s1TabContents[j].classList.remove("active");
+      }
+    }
+  });
+}
+
+for (let i = 0; i < simpleTabs.length; i++) {
+  simpleTabs[i].addEventListener("click", () => {
+    for (let j = 0; j < simpleTabs.length; j++) {
+      if (i === j) {
+        simpleTabs[j].classList.add("active");
+        s2TabContents[j].classList.add("active");
+      } else {
+        simpleTabs[j].classList.remove("active");
+        s2TabContents[j].classList.remove("active");
       }
     }
   });
